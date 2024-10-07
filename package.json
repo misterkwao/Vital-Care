@@ -1,0 +1,11 @@
+{
+  "name": "vital-care",
+  "version": "1.0.0",
+  "description": "Health Care Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vigilant Kwao",
+  "license": "ISC"
+}

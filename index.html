@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="/assests/images/logo-fav.png">
+    <link rel="apple-touch-icon" type="image/png" href="/assests/images/logo-fav.png">
+    <title>Vital Care</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="cards-data.js" defer></script>
+    <script src="/components/main.component.js" defer></script>
+    <script src="/components/packagespg.component.js" defer></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <!-- Loader -->
+     <div id="loader"></div>
+
+    <!-- Top bar -->
+     <header>
+        <span class="logo">
+         <img src="/assests/images/logo-fav.png"  alt="" srcset="">   
+        </span>
+        <!-- Desktop Nav -->
+        <nav class="navigation">
+            <a href="#" class="btn active" id="1"><span class="nav-img"><img src="/assests/images/home-button.png" alt="" srcset="" width="20px"></span> <span>Home</span> </a>
+            <a href="#about-us-section" class="btn" id="2"><span class="nav-img"><img src="/assests/images/human-resource.png" alt="" srcset="" width="20px"> </span><span>Who we are</span> </a>
+            <a href="#services-section" class="btn" id="3"><span class="nav-img"><img src="/assests/images/information.png" alt="" srcset=""width="20px"></span> <span>What we do</span> </a>
+            <a href="#" class="btn" id="4"><span class="nav-img"><img src="/assests/images/box-open.png" alt="" srcset=""width="20px"></span> <span>Our packages</span> </a>
+        </nav>
+        <!-- Mobile Nav -->
+        <nav class="navigation-mobile">
+            <a href="#" class="btn active" id="1"><span class="nav-img"><img src="/assests/images/home-button.png" alt="" srcset="" width="20px"></span> </a>
+            <a href="#about-us-section" class="btn" id="2"><span class="nav-img"><img src="/assests/images/human-resource.png" alt="" srcset="" width="20px"> </span></a>
+            <a href="#services-section" class="btn" id="3"><span class="nav-img"><img src="/assests/images/information.png" alt="" srcset=""width="20px"></span></a>
+            <a href="#" class="btn" id="4"><span class="nav-img"><img src="/assests/images/box-open.png" alt="" srcset=""width="20px"></span></a>
+        </nav>
+
+        <span class="contact-btn"><a href="#contacts" style="text-decoration: none; color: white;">Contact Us</a> </span>
+     </header>
+
+     <!-- Components rendering -->
+     <div class="pg-render"></div>
+
+    <!-- Footer -->
+     <footer class="hidden" id="contacts">
+        <div class="footer-card">
+            <div class="top">
+                <div class="heading">
+                    <h1 style="color:white">Experience primary healthcare at your convenience and schedule.</h1>
+                </div>
+                <div class="newsletter">
+                    <h2 style="color: white;">Subscribe to our newsletter</h2>
+                    <form action="" class="news">
+                        <input type="email" name="email" placeholder="Enter your email" id="newsletter">
+                        <button type="submit" id="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="useful-links">
+                <div class="contacts">
+                    <h3 style="color: white;">Contact Us</h3>
+                    <ul>
+                        <li>ariestechhelpcenter@gmail.com</li>
+                        <li>+233242373839</li>
+                        <li>+234523453453</li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <h3 style="color: white;">Follow Us</h3>
+                    <ul>
+                        <li>LinkedIn</li>
+                        <li>Instagram</li>
+                        <li>X</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="other-info">
+                <p style="color: rgba(245, 245, 245, 0.649);">Developed by AriesTechnologies</p>
+            </div>
+        </div>
+     </footer>
+</body>
+</html>

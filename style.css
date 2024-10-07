@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    background-color: #f4f8ff;
+}
+
+#loader{
+    height: 100dvh;
+    width: 100%;
+    background: #f4f8ff url(/assests/images/heartbeat-loader.gif) no-repeat center center;
+    position: fixed;
+    background-size: 5%;
+    z-index: 100;
+}
+/* Top-header */
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px 0px 15px;
+    position: sticky;
+    top: 0; 
+    width: 100%;
+    background: #f4f8ff;
+    z-index: 1;
+}
+
+.logo img{
+    width: 80px;
+}
+header *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    width: 42%;
+    height: 50px;
+    border-radius: 2.5rem;
+}
+.navigation-mobile{
+    display: none;
+}
+
+nav a{
+    transition: all 0.3s;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+nav a:hover{
+    background-color: #f0f7ff;
+    border-radius: 2.5rem;
+    width: 23%;
+    color: #0b74fa;
+    padding-right: 20px;
+    font-size: 13px;
+    font-weight: 900;
+}
+nav a.active{
+    background-color: #f0f7ff;
+    border-radius: 2.5rem;
+    width: 23%;
+    color: #0b74fa;
+    padding-right: 20px;
+    font-size: 13px;
+    font-weight: 900;
+}
+ nav a.active .nav-img{
+    background-color: #0b74fa;
+    border-radius: 50%;
+ }
+
+
+nav a img{
+    margin: 10px;
+}
+
+.contact-btn{
+    background-color: #0b74fa;
+    height: 45px;
+    min-width: 10%;
+    border-radius: 2.5rem;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.contact-btn:hover{
+    transition: 0.5s ease;
+    box-shadow:  -1px -1px 31px 0px rgba(0,115,255,1);
+}
+
+/* Landing section */
+#landing-section{
+    height: 650px;
+    padding: 9px;
+    display: flex;
+    justify-content: center;
+}
+.landing-card{
+    background-color: #ffffff;
+    height: 640px;
+    width: 99%;
+    border-radius: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.landing-card > div{
+    margin: 15px;
+}
+.landing-card .card-text{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    width: 35%;
+    padding: 5px;
+}
+.landing-card .card-text h1{
+    font-size: 50px;
+}
+.landing-card .card-text p{
+    font-size: 20px;
+    color: rgba(153, 153, 153, 0.771);
+}
+.landing-card .card-img{
+  width: 65%;
+  height: 90%;
+  border-radius: 2.5rem;
+  overflow: hidden;
+}
+.landing-card .card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* About Us section */
+#about-us-section{
+    height: 300px;
+    padding: 9px;
+    display: flex;
+    justify-content: center;
+}
+.about-us-card{
+    background-color: #ffffff;
+    height: 280px;
+    width: 99%;
+    border-radius: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-us-card > div{
+    margin: 15px;
+}
+.about-us-card .card-img{
+    width: 30%;
+    height: 90%;
+    border-radius: 2.5rem;
+    overflow: hidden;
+}
+.about-us-card .card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-us-card .card-text{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 90%;
+    width: 50%;
+    padding: 5px;
+}
+.about-us-card .card-text h3{
+    font-size: 50px;
+}
+.about-us-card .card-text p{
+    font-size: 20px;
+}
+
+/* Our services */
+#services-section{
+    height: 720px;
+    padding: 9px;
+    display: flex;
+    justify-content: center;
+}
+.services-card{
+    background-color: #ffffff;
+    height: 700px;
+    width: 99%;
+    border-radius: 2.5rem;
+    padding: 15px;
+}
+.services-heading{
+    height: 30px;
+    font-size: 30px;
+    color: #0b74fa;
+    text-align: center;
+}
+.services-card .mini-cards{
+    height: 700px;
+    display: flex;
+    padding: 5px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.services-card .mini-cards .card{
+    border-radius: 2.5rem;
+    height: 250px;
+    width: 350px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin: 10px;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.42);
+border-radius: 16px;
+box-shadow: 0 4px 30px #2783fb52;
+backdrop-filter: blur(8.5px);
+-webkit-backdrop-filter: blur(8.5px);
+border: 1px solid rgba(255, 255, 255, 1);
+}
+.services-card .mini-cards .card .img{
+    width: 20%;
+    height: 30%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.services-card .mini-cards .card .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Benefits */
+#benefits-section{
+    height: 400px;
+    padding: 9px;
+    display: flex;
+    justify-content: center;
+}
+.benefits-card{
+    background-color: #ffffff;
+    height: 380px;
+    width: 99%;
+    border-radius: 2.5rem;
+}
+.benefits-heading{
+    margin: 5px;
+    height: 25px;
+    font-size: 25px;
+    color: #0b74fa;
+    text-align: center;
+}
+.benefits-card .mini-cards{
+    height: 120px;
+    display: flex;
+    padding: 5px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.benefits-card .mini-cards .card{
+    border-radius: 2.5rem;
+    height: 100px;
+    width: 310px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.42);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.5px);
+-webkit-backdrop-filter: blur(8.5px);
+border: 1px solid rgba(255, 255, 255, 1);
+}
+.benefits-card .mini-cards .card h4{
+    font-size: 13px;
+}
+
+.benefits-card .mini-cards .card .img{
+    height: 100%;
+    
+    border-radius: 50%;
+    overflow: hidden;
+}
+.benefits-card .mini-cards .card .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Our Packages */
+#packages-section{
+    height: 450px;
+    padding: 9px;
+    display: flex;
+    justify-content: center;
+}
+.packages-card{
+    background-color: #ffffff;
+    height: 420px;
+    width: 99%;
+    border-radius: 2.5rem;
+}
+.packages-heading{
+    margin: 5px;
+    height: 20px;
+    font-size: 25px;
+    color: #0b74fa;
+    text-align: center;
+}
+.packages-card .mini-cards{
+    height: 360px;
+    display: flex;
+    padding: 5px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.packages-card .mini-cards .card{
+    transition: 1s ease;
+    cursor: pointer;
+    border-radius: 2.5rem;
+    height: 100px;
+    width: 230px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.42);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.5px);
+-webkit-backdrop-filter: blur(8.5px);
+border: 1px solid rgba(255, 255, 255, 1);
+}
+.packages-card .mini-cards .card .sub-contents{
+    display:none;
+}
+.packages-card .mini-cards .card:hover{
+    transition: 1s ease;
+    height: 200px;
+    box-shadow: 0 4px 30px #2783fb52;
+}
+.packages-card .mini-cards .card:hover .img{
+    display:none;
+}
+.packages-card .mini-cards .card:hover h4{
+    display:none;
+}
+.packages-card .mini-cards .card:hover .sub-contents{
+    font-size: 12px;
+    padding: 5px;
+    display:block;
+}
+
+.packages-card .mini-cards .card h4{
+    font-size: 13px;
+}
+
+.packages-card .mini-cards .card .img{
+    height: 100%;
+    
+    border-radius: 50%;
+    overflow: hidden;
+}
+.packages-card .mini-cards .card .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* boring animation */
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.2s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* footer */
+footer{
+    height: 450px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-card{
+    background-color: #0b74fa;
+    height: 400px;
+    width: 99%;
+    border-radius: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.footer-card .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0px 15px 0px 15px;
+}
+.footer-card .top .heading{
+    width: 50%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+.footer-card .top .newsletter{
+    width: 50%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+input{
+    padding: 15px;
+    outline: none;
+    margin-top: 15px;
+    border: 1px white solid;
+    border-radius: 2rem;
+    box-sizing: border-box;
+}
+input::placeholder{
+    color: black;
+}
+#newsletter{
+    width: 50%;
+}
+#submit{
+    background-color: #ffffff;
+    height: 45px;
+    border-radius: 2.5rem;
+    color:#0b74fa;
+    padding: 10;
+    width: 20%;
+    border: none;
+    outline: none;
+}
+
+.footer-card .useful-links{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 400px;
+}
+
+.footer-card .useful-links > div{
+    margin: 10px;
+}
+.footer-card .useful-links ul {
+    color: rgba(245, 245, 245, 0.649);
+    list-style: none;
+}
+.footer-card .useful-links ul li{
+    margin: 10px;
+}
+
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    #loader{
+        background-size: 25%; 
+    }
+    .navigation{
+        display: none;
+    }
+    .navigation-mobile{
+        display: flex;
+        position: fixed;
+        width: 80%;
+        bottom: 0;
+        margin-bottom: 10px;
+        left: 10%;
+         /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.42);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8.5px);
+        -webkit-backdrop-filter: blur(8.5px);
+
+    }
+    nav a.active{
+        width: 0%;
+        margin-left: -5px;
+        margin-right: 9px;
+        background-color: transparent !important;
+    }
+    /* Landing section */
+    #landing-section{
+        height: 810px;
+    }
+    .landing-card {
+        height: 800px;
+        flex-wrap: wrap;
+    }
+    .landing-card .card-text{
+        width: 100%;
+    }
+    .landing-card .card-img{
+        width: 100%;
+        height: 40%;
+    }
+    /* About us */
+    #about-us-section{
+        height: 750px;
+    }
+    .about-us-card{
+        height: 720px;
+        flex-wrap: wrap;
+    }
+    .about-us-card .card-img{
+        width: 100%;
+        height: 30%;
+    }
+    .about-us-card .card-text{
+        height: 50%;
+        width: 100%;
+    }
+    /* Our services */
+    #services-section{
+        height: 100%;
+    }
+    .services-card{
+        height: 1800px;
+        width: 100%;
+        padding: 0px;
+        background-color: #f4f8ff;
+    }
+    .services-card .mini-cards{
+        height: 1750px;
+        display: flex;
+        padding: 5px;
+        flex-wrap: wrap;
+    }
+    .services-card .mini-cards .card{
+        height: 250px;
+        width: 450px;
+    }
+    .services-heading{
+        font-size: 25px;
+    }
+    /* Benefits */
+    #benefits-section{
+        height: 650px;
+    }
+    .benefits-card{
+        height: 610px;
+        width: 100%; 
+        background-color: #f4f8ff;
+    }
+    .benefits-heading{
+        font-size: 20px;
+    }
+    .benefits-card .mini-cards .card{
+        height: 100px;
+        width: 100%;
+    }
+
+    /* Our Packages */
+    #packages-section{
+        height: 900px;
+        padding: 9px;
+    }
+    .packages-card{
+        background-color: transparent !important;
+        height: 850px;
+        width: 100%;
+    }
+    .packages-card .mini-cards{
+       height: 700px;
+    }
+    .packages-card .mini-cards .card{
+        width: 100%;
+    }
+    /* footer */
+    footer{
+        height: 750px;
+        width: 100%;
+    }
+    .footer-card{
+        height: 710px;
+        width: 100%;
+    }
+    .footer-card .top{
+        display: flex;
+       flex-wrap: wrap;
+    }
+    .footer-card .top >div{
+        font-size: 14px;
+        margin: 20px;
+    }
+    .footer-card .top .heading{
+        width: 100%;
+        height: 120px;
+    }
+    .footer-card .top .newsletter{
+        width: 100%;
+        height: 150px;
+    }
+    #newsletter{
+        width: 65%;
+    }
+    #submit{
+        width: 30%;
+    }
+    .footer-card .useful-links{
+        font-size: 15px;
+    }
+}
