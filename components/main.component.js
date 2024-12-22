@@ -76,4 +76,3 @@ for (let i = 0; i < cards_data.length; i++){
 }
 
 });
-
